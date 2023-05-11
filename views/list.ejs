@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Memo List</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <h1 class="logo">note</h1>
+  <h1>Memo List</h1>
+  <ul class="memo-list">
+    <% for (var i = 0; i < memos.length; i++) { %>
+      <li><a href="/show/<%= memos[i]._id %>"><%= memos[i].title %></a></li>
+    <% } %>
+  </ul>
+  <a href="/new" class="new-memo-btn">New Memo</a>
+
+  <script src="/public/app.js"></script>
+</body>
+</html>

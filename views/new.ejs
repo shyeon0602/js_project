@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Memo</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+  <h1 class="logo">note</h1>
+  <h1 style="margin:20px;">New Memo</h1>
+  <form method="post" action="/create">
+    <div class="title-box">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" maxlength="15">
+    </div>
+    <div class="content-box">
+      <label for="content">Content</label>
+      <textarea name="content" id="content"></textarea>
+    </div>
+    <button type="submit" class="save-btn">Save</button>
+    <a href="/" class="cancel-btn">Cancel</a>
+  </form>
+
+  <script src="/public/app.js"></script>
+</body>
+</html>

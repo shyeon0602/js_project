@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= memo.title %></title>
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <h1 class="logo">note</h1>
+    <h1 style="margin-top: 20px;"><%= memo.title %></h1>
+    <p style="margin: 20px;"><%= memo.content %></p>
+    <div>
+      <a href="/edit/<%= memo._id %>" class="edit-btn">Edit</a>
+      <form action="/delete/<%= memo._id %>" method="POST" class="delete-btn">
+        <button type="submit">Delete</button>
+      </form>
+      <a href="/" class="home-btn">Home</a>
+    </div>
+
+    <script src="/public/app.js"></script>
+  </body>
+</html>

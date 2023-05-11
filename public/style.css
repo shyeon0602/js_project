@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+body {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Bruno Ace SC", cursive;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 80px;
+}
+.memo-list {
+  margin: 20px auto;
+}
+.memo-list > li {
+  list-style-type: circle;
+  border-bottom: 1px solid darkgray;
+  display: block;
+  margin: 8px auto;
+  width: 250px;
+}
+.new-memo-btn,
+.cancel-btn,
+.edit-btn,
+.home-btn {
+  width: 50px;
+  height: 40px;
+  padding: 5px;
+  margin: 20px 10px;
+  box-sizing: border-box;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.delete-btn,
+.save-btn {
+  width: 55px;
+  height: 27px;
+  padding: 5px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.new-memo-btn:hover,
+.cancel-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover,
+.home-btn:hover,
+.save-btn:hover {
+  background-color: black;
+}
+
+form {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-box,
+.content-box {
+  margin: 20px;
+}
+.title-box > label {
+  width: 10px;
+}
+.content-box > label {
+  display: block;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  resize: none;
+}
