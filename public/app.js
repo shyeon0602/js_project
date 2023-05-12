@@ -3,15 +3,6 @@ const viewMemo = (id) => {
   window.location.href = `/show/${id}`;
 };
 
-// Edit버튼
-const editButtons = document.querySelectorAll(".edit-btn");
-editButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const memoId = button.dataset.id;
-    window.location.href = `/edit/${memoId}`;
-  });
-});
-
 // Delete버튼
 const deleteButton = document.querySelector(".delete-btn");
 deleteButton.addEventListener("click", () => {

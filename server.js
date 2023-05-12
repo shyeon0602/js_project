@@ -107,7 +107,8 @@ app.post("/update/:id", async (req, res) => {
 // 메모 삭제 처리
 app.get("/delete/:id", async (req, res) => {
   try {
-    await Memo.findByIdAndRemove(req.params.id);
+    const memoId = req.params.id;
+    await Memo.findByIdAndDelete(memoId);
     res.redirect("/");
   } catch (err) {
     console.error(err);
