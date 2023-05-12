@@ -6,7 +6,7 @@ const viewMemo = (id) => {
 // Delete버튼
 const deleteButton = document.querySelector(".delete-btn");
 deleteButton.addEventListener("click", () => {
-  const memoId = deleteButton.dataset.id;
+  const memoId = deleteButton.getAttribute("action").split("/")[2];
   fetch(`/delete/${memoId}`, {
     method: "POST",
   })
