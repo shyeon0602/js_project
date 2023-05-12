@@ -126,6 +126,16 @@ app.post("/delete/:id", async (req, res) => {
     res.status(500).send("메모 삭제 중 오류가 발생했습니다.");
   }
 });
+// app.delete("/delete/:id", async (req, res) => {
+//   try {
+//     const memoId = req.params.id;
+//     await Memo.findByIdAndDelete(memoId);
+//     res.redirect("/");
+//   } catch (err) {
+//     console.error(err);
+//     res.send("메모 삭제 중 오류가 발생했습니다.");
+//   }
+// });
 
 // 서버 시작
 const port = 3000;

@@ -11,7 +11,7 @@
     <p style="margin: 20px;"><%= memo.content %></p>
     <div>
       <a href="/edit/<%= memo._id %>" class="edit-btn">Edit</a>
-      <form action="/delete/<%= memo._id %>" method="POST" class="delete-btn">
+      <form action="/delete/<%= memo._id %>?_method=DELETE" method="POST" class="delete-btn">
         <button type="submit">Delete</button>
       </form>
       <a href="/" class="home-btn">Home</a>
